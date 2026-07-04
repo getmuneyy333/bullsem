@@ -22,6 +22,11 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.GITHUB_PAGES === "true"
+      ? "https://getmuneyy333.github.io/bullsem"
+      : "http://localhost:3000",
+  ),
   title: "$BULLSEM | Ansem's Bull on Solana",
   description:
     "The Black Bull of Solana. Born from Ansem's call. Charged by the Army.",
