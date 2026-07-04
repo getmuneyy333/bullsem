@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Inter, JetBrains_Mono } from "next/font/google";
 import ClientShell from "@/components/ClientShell";
+import { assetPath } from "@/lib/utils";
 import "./globals.css";
 
 const bebas = Bebas_Neue({
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "$BULLSEM | Ansem's Bull",
     description: "Conviction has a mascot. The black bull runs on Solana.",
-    images: ["/images/bullsemlogo.jpg"],
+    images: [assetPath("/images/bullsemlogo.jpg")],
   },
 };
 

@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/utils";
 
-const LOGO_SRC = "/images/bullsemlogo.jpg";
+const LOGO_SRC = assetPath("/images/bullsemlogo.jpg");
 
 type BullLogoProps = {
   className?: string;

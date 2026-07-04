@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/utils";
 
 type Face = {
   top: string;
@@ -63,7 +64,7 @@ export default function AnsemWallpaper() {
           }}
         >
           <Image
-            src="/images/bullsemtransparent.png"
+            src={assetPath("/images/bullsemtransparent.png")}
             alt=""
             width={face.size}
             height={face.size}

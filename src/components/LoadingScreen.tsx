@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { assetPath } from "@/lib/utils";
 
 const LOAD_MS = 4000;
 const FADE_MS = 3500;
@@ -38,7 +39,7 @@ export default function LoadingScreen() {
 
       <div className="loader-spin relative mx-auto w-[min(72vw,340px)] max-w-full">
         <Image
-          src="/images/bullsemtransparent.png"
+          src={assetPath("/images/bullsemtransparent.png")}
           alt="Bullsem loading"
           width={680}
           height={680}
