@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+gcm-diagnose.log
 
 # debug
 npm-debug.log*
